@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.kafka.controller.KafkaMessageControllerIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-21T16:55:11" hostname="192.168.1.7" time="0.075">
+  <properties/>
+  <testcase name="testGetMessages()" classname="com.example.kafka.controller.KafkaMessageControllerIntegrationTest" time="0.075"/>
+  <system-out><![CDATA[22:25:10.262 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.kafka.controller.KafkaMessageControllerIntegrationTest]: KafkaMessageControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:25:10.320 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.kafka.Main for test class com.example.kafka.controller.KafkaMessageControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.1)
+
+2024-06-21T22:25:10.477+05:30  INFO 89459 --- [    Test worker] .c.KafkaMessageControllerIntegrationTest : Starting KafkaMessageControllerIntegrationTest using Java 20.0.2 with PID 89459 (started by ekankaar in /Users/ekankaar/IdeaProjects/kafka1)
+2024-06-21T22:25:10.478+05:30  INFO 89459 --- [    Test worker] .c.KafkaMessageControllerIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T22:25:11.078+05:30  INFO 89459 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-21T22:25:11.079+05:30  INFO 89459 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-21T22:25:11.080+05:30  INFO 89459 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-21T22:25:11.094+05:30  INFO 89459 --- [    Test worker] .c.KafkaMessageControllerIntegrationTest : Started KafkaMessageControllerIntegrationTest in 0.734 seconds (process running for 1.266)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
