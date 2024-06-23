@@ -87,21 +87,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-06-21T22:25:13.388+05:30  INFO 89459 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.kafka.service.KafkaProducerServiceTest]: KafkaProducerServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-06-21T22:25:13.391+05:30  INFO 89459 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.kafka.Main for test class com.example.kafka.service.KafkaProducerServiceTest
-2024-06-21T22:25:13.393+05:30  INFO 89459 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-4 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
-2024-06-21T22:25:13.393+05:30  INFO 89459 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-3 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
-2024-06-21T22:25:13.393+05:30  INFO 89459 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-2 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
-2024-06-21T22:25:13.393+05:30  INFO 89459 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-0 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
-2024-06-21T22:25:13.393+05:30  INFO 89459 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Changed partition __consumer_offsets-1 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=0, leaderEpoch=0, isr=List(0), leaderRecoveryState=RECOVERED, partitionEpoch=0)
-2024-06-21T22:25:13.393+05:30  INFO 89459 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending LeaderAndIsr request to broker 0 with 5 become-leader and 0 become-follower partitions
-2024-06-21T22:25:13.393+05:30  INFO 89459 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet(0) for 5 partitions
-2024-06-21T22:25:13.393+05:30  INFO 89459 --- [er-event-thread] state.change.logger                      : [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
-2024-06-21T22:25:13.394+05:30  INFO 89459 --- [quest-handler-4] state.change.logger                      : [Broker id=0] Handling LeaderAndIsr request correlationId 3 from controller 0 for 5 partitions
-2024-06-21T22:25:13.398+05:30  INFO 89459 --- [quest-handler-4] kafka.server.ReplicaFetcherManager       : [ReplicaFetcherManager on broker 0] Removed fetcher for partitions HashSet(__consumer_offsets-4, __consumer_offsets-3, __consumer_offsets-2, __consumer_offsets-0, __consumer_offsets-1)
-2024-06-21T22:25:13.398+05:30  INFO 89459 --- [quest-handler-4] state.change.logger                      : [Broker id=0] Stopped fetchers as part of LeaderAndIsr request correlationId 3 from controller 0 epoch 1 as part of the become-leader transition for 5 partitions
-2024-06-21T22:25:13.402+05:30  INFO 89459 --- [quest-handler-4] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-3, dir=/var/folders/22/k85s8fsx4fd3yz59ymwrqgz80000gn/T/spring.kafka.33e47697-d846-49e2-98cc-e389118422ef2040092462775706215] Loading producer state till offset 0 with message format version 2
-2024-06-21T22:25:13.402+05:30  INFO 89459 --- [quest-handler-4] kafka.log.LogManager                     : Created log for partition __consumer_offsets-3 in /var/folders/22/k85s8fsx4fd3yz59ymwrqgz80000gn/T/spring.kafka.33e47697-d846-49e2-98cc-e389118422ef2040092462775706215/__consumer_offsets-3 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+<pre>2024-06-24T02:42:00.294+05:30  INFO 32357 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.kafka.service.KafkaProducerServiceTest]: KafkaProducerServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-24T02:42:00.297+05:30  INFO 32357 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.kafka.Main for test class com.example.kafka.service.KafkaProducerServiceTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -111,72 +98,14 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.1)
 
-2024-06-21T22:25:13.402+05:30  INFO 89459 --- [quest-handler-4] kafka.cluster.Partition                  : [Partition __consumer_offsets-3 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-3
-2024-06-21T22:25:13.402+05:30  INFO 89459 --- [quest-handler-4] kafka.cluster.Partition                  : [Partition __consumer_offsets-3 broker=0] Log loaded for partition __consumer_offsets-3 with initial high watermark 0
-2024-06-21T22:25:13.402+05:30  INFO 89459 --- [quest-handler-4] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-3 with topic id Some(xGbpqRHWRAyZEmah71fDXQ) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
-2024-06-21T22:25:13.404+05:30  INFO 89459 --- [    Test worker] c.e.k.service.KafkaProducerServiceTest   : Starting KafkaProducerServiceTest using Java 20.0.2 with PID 89459 (started by ekankaar in /Users/ekankaar/IdeaProjects/kafka1)
-2024-06-21T22:25:13.404+05:30  INFO 89459 --- [    Test worker] c.e.k.service.KafkaProducerServiceTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-06-21T22:25:13.412+05:30  INFO 89459 --- [quest-handler-4] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-2, dir=/var/folders/22/k85s8fsx4fd3yz59ymwrqgz80000gn/T/spring.kafka.33e47697-d846-49e2-98cc-e389118422ef2040092462775706215] Loading producer state till offset 0 with message format version 2
-2024-06-21T22:25:13.412+05:30  INFO 89459 --- [quest-handler-4] kafka.log.LogManager                     : Created log for partition __consumer_offsets-2 in /var/folders/22/k85s8fsx4fd3yz59ymwrqgz80000gn/T/spring.kafka.33e47697-d846-49e2-98cc-e389118422ef2040092462775706215/__consumer_offsets-2 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
-2024-06-21T22:25:13.412+05:30  INFO 89459 --- [quest-handler-4] kafka.cluster.Partition                  : [Partition __consumer_offsets-2 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-2
-2024-06-21T22:25:13.412+05:30  INFO 89459 --- [quest-handler-4] kafka.cluster.Partition                  : [Partition __consumer_offsets-2 broker=0] Log loaded for partition __consumer_offsets-2 with initial high watermark 0
-2024-06-21T22:25:13.412+05:30  INFO 89459 --- [quest-handler-4] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-2 with topic id Some(xGbpqRHWRAyZEmah71fDXQ) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
-2024-06-21T22:25:13.422+05:30  INFO 89459 --- [quest-handler-4] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-4, dir=/var/folders/22/k85s8fsx4fd3yz59ymwrqgz80000gn/T/spring.kafka.33e47697-d846-49e2-98cc-e389118422ef2040092462775706215] Loading producer state till offset 0 with message format version 2
-2024-06-21T22:25:13.422+05:30  INFO 89459 --- [quest-handler-4] kafka.log.LogManager                     : Created log for partition __consumer_offsets-4 in /var/folders/22/k85s8fsx4fd3yz59ymwrqgz80000gn/T/spring.kafka.33e47697-d846-49e2-98cc-e389118422ef2040092462775706215/__consumer_offsets-4 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
-2024-06-21T22:25:13.422+05:30  INFO 89459 --- [quest-handler-4] kafka.cluster.Partition                  : [Partition __consumer_offsets-4 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-4
-2024-06-21T22:25:13.422+05:30  INFO 89459 --- [quest-handler-4] kafka.cluster.Partition                  : [Partition __consumer_offsets-4 broker=0] Log loaded for partition __consumer_offsets-4 with initial high watermark 0
-2024-06-21T22:25:13.422+05:30  INFO 89459 --- [quest-handler-4] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-4 with topic id Some(xGbpqRHWRAyZEmah71fDXQ) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
-2024-06-21T22:25:13.431+05:30  INFO 89459 --- [quest-handler-4] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-1, dir=/var/folders/22/k85s8fsx4fd3yz59ymwrqgz80000gn/T/spring.kafka.33e47697-d846-49e2-98cc-e389118422ef2040092462775706215] Loading producer state till offset 0 with message format version 2
-2024-06-21T22:25:13.432+05:30  INFO 89459 --- [quest-handler-4] kafka.log.LogManager                     : Created log for partition __consumer_offsets-1 in /var/folders/22/k85s8fsx4fd3yz59ymwrqgz80000gn/T/spring.kafka.33e47697-d846-49e2-98cc-e389118422ef2040092462775706215/__consumer_offsets-1 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
-2024-06-21T22:25:13.432+05:30  INFO 89459 --- [quest-handler-4] kafka.cluster.Partition                  : [Partition __consumer_offsets-1 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-1
-2024-06-21T22:25:13.432+05:30  INFO 89459 --- [quest-handler-4] kafka.cluster.Partition                  : [Partition __consumer_offsets-1 broker=0] Log loaded for partition __consumer_offsets-1 with initial high watermark 0
-2024-06-21T22:25:13.432+05:30  INFO 89459 --- [quest-handler-4] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-1 with topic id Some(xGbpqRHWRAyZEmah71fDXQ) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
-2024-06-21T22:25:13.442+05:30  INFO 89459 --- [quest-handler-4] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-0, dir=/var/folders/22/k85s8fsx4fd3yz59ymwrqgz80000gn/T/spring.kafka.33e47697-d846-49e2-98cc-e389118422ef2040092462775706215] Loading producer state till offset 0 with message format version 2
-2024-06-21T22:25:13.443+05:30  INFO 89459 --- [quest-handler-4] kafka.log.LogManager                     : Created log for partition __consumer_offsets-0 in /var/folders/22/k85s8fsx4fd3yz59ymwrqgz80000gn/T/spring.kafka.33e47697-d846-49e2-98cc-e389118422ef2040092462775706215/__consumer_offsets-0 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
-2024-06-21T22:25:13.443+05:30  INFO 89459 --- [quest-handler-4] kafka.cluster.Partition                  : [Partition __consumer_offsets-0 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-0
-2024-06-21T22:25:13.443+05:30  INFO 89459 --- [quest-handler-4] kafka.cluster.Partition                  : [Partition __consumer_offsets-0 broker=0] Log loaded for partition __consumer_offsets-0 with initial high watermark 0
-2024-06-21T22:25:13.443+05:30  INFO 89459 --- [quest-handler-4] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-0 with topic id Some(xGbpqRHWRAyZEmah71fDXQ) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1.
-2024-06-21T22:25:13.450+05:30  INFO 89459 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
-2024-06-21T22:25:13.452+05:30  INFO 89459 --- [quest-handler-4] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Elected as the group coordinator for partition 3 in epoch 0
-2024-06-21T22:25:13.452+05:30  INFO 89459 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Cassandra repository interfaces.
-2024-06-21T22:25:13.452+05:30  INFO 89459 --- [quest-handler-4] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-3 for epoch 0
-2024-06-21T22:25:13.452+05:30  INFO 89459 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
-2024-06-21T22:25:13.453+05:30  INFO 89459 --- [quest-handler-4] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Elected as the group coordinator for partition 2 in epoch 0
-2024-06-21T22:25:13.453+05:30  INFO 89459 --- [quest-handler-4] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-2 for epoch 0
-2024-06-21T22:25:13.453+05:30  INFO 89459 --- [quest-handler-4] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Elected as the group coordinator for partition 4 in epoch 0
-2024-06-21T22:25:13.453+05:30  INFO 89459 --- [quest-handler-4] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-4 for epoch 0
-2024-06-21T22:25:13.453+05:30  INFO 89459 --- [quest-handler-4] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Elected as the group coordinator for partition 1 in epoch 0
-2024-06-21T22:25:13.453+05:30  INFO 89459 --- [quest-handler-4] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-1 for epoch 0
-2024-06-21T22:25:13.453+05:30  INFO 89459 --- [quest-handler-4] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Elected as the group coordinator for partition 0 in epoch 0
-2024-06-21T22:25:13.453+05:30  INFO 89459 --- [quest-handler-4] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-0 for epoch 0
-2024-06-21T22:25:13.453+05:30  INFO 89459 --- [quest-handler-4] state.change.logger                      : [Broker id=0] Finished LeaderAndIsr request in 59ms correlationId 3 from controller 0 for 5 partitions
-2024-06-21T22:25:13.455+05:30  INFO 89459 --- [quest-handler-6] state.change.logger                      : [Broker id=0] Add 5 partitions and deleted 0 partitions from metadata cache in response to UpdateMetadata request sent by controller 0 epoch 1 with correlation id 4
-2024-06-21T22:25:13.455+05:30  INFO 89459 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 Cassandra repository interfaces.
-2024-06-21T22:25:13.455+05:30  INFO 89459 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-3 in 2 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler.
-2024-06-21T22:25:13.455+05:30  INFO 89459 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-2 in 2 milliseconds for epoch 0, of which 2 milliseconds was spent in the scheduler.
-2024-06-21T22:25:13.455+05:30  INFO 89459 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-4 in 2 milliseconds for epoch 0, of which 2 milliseconds was spent in the scheduler.
-2024-06-21T22:25:13.455+05:30  INFO 89459 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-1 in 2 milliseconds for epoch 0, of which 2 milliseconds was spent in the scheduler.
-2024-06-21T22:25:13.455+05:30  INFO 89459 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-0 in 2 milliseconds for epoch 0, of which 2 milliseconds was spent in the scheduler.
-2024-06-21T22:25:13.475+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
-2024-06-21T22:25:13.477+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
-2024-06-21T22:25:13.489+05:30  INFO 89459 --- [quest-handler-2] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Dynamic member with unknown member id joins group group_id in Empty state. Created a new member id consumer-group_id-1-a3932933-2352-4a35-b783-59ffbf3aacb6 and request the member to rejoin with this id.
-2024-06-21T22:25:13.492+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: need to re-join with the given member-id: consumer-group_id-1-a3932933-2352-4a35-b783-59ffbf3aacb6
-2024-06-21T22:25:13.492+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
-2024-06-21T22:25:13.492+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
-2024-06-21T22:25:13.494+05:30  INFO 89459 --- [quest-handler-3] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Preparing to rebalance group group_id in state PreparingRebalance with old generation 0 (__consumer_offsets-3) (reason: Adding new member consumer-group_id-1-a3932933-2352-4a35-b783-59ffbf3aacb6 with group instance id None; client reason: rebalance failed due to MemberIdRequiredException)
-2024-06-21T22:25:13.497+05:30  INFO 89459 --- [cutor-Rebalance] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Stabilized group group_id generation 1 (__consumer_offsets-3) with 1 members
-2024-06-21T22:25:13.498+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation Generation{generationId=1, memberId='consumer-group_id-1-a3932933-2352-4a35-b783-59ffbf3aacb6', protocol='range'}
-2024-06-21T22:25:13.499+05:30  INFO 89459 --- [     s1-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
-2024-06-21T22:25:13.499+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 1: {consumer-group_id-1-a3932933-2352-4a35-b783-59ffbf3aacb6=Assignment(partitions=[users-0])}
-2024-06-21T22:25:13.503+05:30  INFO 89459 --- [quest-handler-4] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Assignment received from leader consumer-group_id-1-a3932933-2352-4a35-b783-59ffbf3aacb6 for group group_id for generation 1. The group has 1 members, 0 of which are static.
-2024-06-21T22:25:13.527+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully synced group in generation Generation{generationId=1, memberId='consumer-group_id-1-a3932933-2352-4a35-b783-59ffbf3aacb6', protocol='range'}
-2024-06-21T22:25:13.528+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[users-0])
-2024-06-21T22:25:13.529+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: users-0
-2024-06-21T22:25:13.534+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Found no committed offset for partition users-0
-2024-06-21T22:25:13.535+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Found no committed offset for partition users-0
-2024-06-21T22:25:13.541+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting offset for partition users-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}.
-2024-06-21T22:25:13.548+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [users-0]
-2024-06-21T22:25:13.632+05:30  INFO 89459 --- [    Test worker] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+2024-06-24T02:42:00.307+05:30  INFO 32357 --- [    Test worker] c.e.k.service.KafkaProducerServiceTest   : Starting KafkaProducerServiceTest using Java 20.0.2 with PID 32357 (started by ekankaar in /Users/ekankaar/IdeaProjects/kafka1)
+2024-06-24T02:42:00.308+05:30  INFO 32357 --- [    Test worker] c.e.k.service.KafkaProducerServiceTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-06-24T02:42:00.357+05:30  INFO 32357 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2024-06-24T02:42:00.359+05:30  INFO 32357 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Cassandra repository interfaces.
+2024-06-24T02:42:00.360+05:30  INFO 32357 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2024-06-24T02:42:00.363+05:30  INFO 32357 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 Cassandra repository interfaces.
+2024-06-24T02:42:00.398+05:30  INFO 32357 --- [     s1-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
+2024-06-24T02:42:00.520+05:30  INFO 32357 --- [    Test worker] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
 	auto.include.jmx.reporter = true
 	bootstrap.servers = [localhost:9092]
 	client.dns.lookup = use_all_dns_ips
@@ -247,14 +176,14 @@
 	ssl.truststore.password = null
 	ssl.truststore.type = JKS
 
-2024-06-21T22:25:13.634+05:30  INFO 89459 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
-2024-06-21T22:25:13.634+05:30  INFO 89459 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
-2024-06-21T22:25:13.634+05:30  INFO 89459 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1718988913634
-2024-06-21T22:25:13.639+05:30  INFO 89459 --- [| adminclient-3] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-3 unregistered
-2024-06-21T22:25:13.639+05:30  INFO 89459 --- [| adminclient-3] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2024-06-21T22:25:13.639+05:30  INFO 89459 --- [| adminclient-3] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2024-06-21T22:25:13.640+05:30  INFO 89459 --- [| adminclient-3] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2024-06-21T22:25:13.642+05:30  INFO 89459 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+2024-06-24T02:42:00.521+05:30  INFO 32357 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2024-06-24T02:42:00.521+05:30  INFO 32357 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2024-06-24T02:42:00.521+05:30  INFO 32357 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1719177120521
+2024-06-24T02:42:00.528+05:30  INFO 32357 --- [| adminclient-3] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-3 unregistered
+2024-06-24T02:42:00.528+05:30  INFO 32357 --- [| adminclient-3] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-06-24T02:42:00.528+05:30  INFO 32357 --- [| adminclient-3] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-24T02:42:00.528+05:30  INFO 32357 --- [| adminclient-3] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-06-24T02:42:00.531+05:30  INFO 32357 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -348,20 +277,20 @@
 	ssl.truststore.type = JKS
 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
 
-2024-06-21T22:25:13.644+05:30  INFO 89459 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
-2024-06-21T22:25:13.644+05:30  INFO 89459 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
-2024-06-21T22:25:13.644+05:30  INFO 89459 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1718988913644
-2024-06-21T22:25:13.644+05:30  INFO 89459 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-2, groupId=group_id] Subscribed to topic(s): users
-2024-06-21T22:25:13.650+05:30  INFO 89459 --- [    Test worker] c.e.k.service.KafkaProducerServiceTest   : Started KafkaProducerServiceTest in 0.257 seconds (process running for 3.823)
-2024-06-21T22:25:13.653+05:30  INFO 89459 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-2, groupId=group_id] Resetting the last seen epoch of partition users-0 to 0 since the associated topicId changed from null to EP-DCTboQdWAIk9N8gPMFg
-2024-06-21T22:25:13.653+05:30  INFO 89459 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-2, groupId=group_id] Cluster ID: ljEQ--5MQh-NWM3JUH6A1w
-2024-06-21T22:25:13.654+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
-2024-06-21T22:25:13.655+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
-2024-06-21T22:25:13.658+05:30  INFO 89459 --- [quest-handler-3] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Dynamic member with unknown member id joins group group_id in Stable state. Created a new member id consumer-group_id-2-147e11b7-dc56-45ab-ab5d-571c33635b48 and request the member to rejoin with this id.
-2024-06-21T22:25:13.659+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Request joining group due to: need to re-join with the given member-id: consumer-group_id-2-147e11b7-dc56-45ab-ab5d-571c33635b48
-2024-06-21T22:25:13.659+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
-2024-06-21T22:25:13.659+05:30  INFO 89459 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
-2024-06-21T22:25:13.661+05:30  INFO 89459 --- [quest-handler-4] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Preparing to rebalance group group_id in state PreparingRebalance with old generation 1 (__consumer_offsets-3) (reason: Adding new member consumer-group_id-2-147e11b7-dc56-45ab-ab5d-571c33635b48 with group instance id None; client reason: rebalance failed due to MemberIdRequiredException)
+2024-06-24T02:42:00.532+05:30  INFO 32357 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2024-06-24T02:42:00.532+05:30  INFO 32357 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2024-06-24T02:42:00.532+05:30  INFO 32357 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1719177120532
+2024-06-24T02:42:00.532+05:30  INFO 32357 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-2, groupId=group_id] Subscribed to topic(s): users
+2024-06-24T02:42:00.536+05:30  INFO 32357 --- [    Test worker] c.e.k.service.KafkaProducerServiceTest   : Started KafkaProducerServiceTest in 0.236 seconds (process running for 3.344)
+2024-06-24T02:42:00.537+05:30  INFO 32357 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-2, groupId=group_id] Resetting the last seen epoch of partition users-0 to 0 since the associated topicId changed from null to B8baNVPkSg-wfed7vW5h7A
+2024-06-24T02:42:00.537+05:30  INFO 32357 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-2, groupId=group_id] Cluster ID: VyvCw1yTTfusuvfX7c-GyA
+2024-06-24T02:42:00.538+05:30  INFO 32357 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2024-06-24T02:42:00.538+05:30  INFO 32357 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
+2024-06-24T02:42:00.542+05:30  INFO 32357 --- [quest-handler-6] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Dynamic member with unknown member id joins group group_id in Stable state. Created a new member id consumer-group_id-2-3916fae0-a96e-45d3-9d3a-e1466953cac5 and request the member to rejoin with this id.
+2024-06-24T02:42:00.543+05:30  INFO 32357 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Request joining group due to: need to re-join with the given member-id: consumer-group_id-2-3916fae0-a96e-45d3-9d3a-e1466953cac5
+2024-06-24T02:42:00.543+05:30  INFO 32357 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2024-06-24T02:42:00.543+05:30  INFO 32357 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
+2024-06-24T02:42:00.544+05:30  INFO 32357 --- [quest-handler-7] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Preparing to rebalance group group_id in state PreparingRebalance with old generation 1 (__consumer_offsets-3) (reason: Adding new member consumer-group_id-2-3916fae0-a96e-45d3-9d3a-e1466953cac5 with group instance id None; client reason: rebalance failed due to MemberIdRequiredException)
 </pre>
 </span>
 </div>
@@ -373,7 +302,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at 21-Jun-2024, 10:25:18 pm</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at 24-Jun-2024, 2:42:05 am</p>
 </div>
 </div>
 </body>
