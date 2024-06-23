@@ -5,7 +5,7 @@ import com.datastax.oss.driver.api.core.CqlSession;
 public class CassandraKeyspaceInitializer {
 
     public static void createKeyspace(CqlSession cqlSession) {
-        String keyspaceName = "tes";
+        String keyspaceName = "test";
         String replicationStrategy = "SimpleStrategy";
         int replicationFactor = 1;
 
